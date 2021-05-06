@@ -1,7 +1,7 @@
 {
   "name": "P57",
   "title": "Azure MT3620",
-  "description": "Azure Sphere MT3620 Development PlatformIO",
+  "description": "Azure Sphere MT3620 : Cortex-A7 + 2 X Cortex-M4F",
   "homepage": "https://www.mediatek.com/products/AIoT/mt3620",
   "license": "Apache-2.0",
   "engines": {

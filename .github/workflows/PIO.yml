@@ -61,7 +61,7 @@ jobs:
           # - "exArduinoJavascript"
           - "LinuxHelloWorld"
           - "MTK_FreeRTOS"
-          - "MTK_HelloWorld"
+          # - "MTK_HelloWorld"
           - "WiringM4F_Blink"
         os: [windows-latest]
 
