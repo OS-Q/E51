@@ -1,0 +1,23 @@
+{
+    "Name": "", 
+    "Capabilities": {
+        "Uart": [
+            "$AVNET_AESMS_ISU0_UART"
+        ], 
+        "AllowedConnections": [
+            "iot.eclipse.org", 
+            "mqtt.eclipse.org"
+        ], 
+        "SystemTime": true, 
+        "WifiConfig": true, 
+        "Gpio": [
+            "$AVNET_AESMS_PIN11_GPIO8", 
+            "$AVNET_AESMS_PIN12_GPIO9", 
+            "$AVNET_AESMS_PIN13_GPIO10"
+        ]
+    }, 
+    "CmdArgs": [], 
+    "EntryPoint": "", 
+    "SchemaVersion": 1, 
+    "ComponentId": "9173E1FC-654B-46D4-B12F-F514BAA99DE5"
+}
