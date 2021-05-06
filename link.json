@@ -1,0 +1,55 @@
+{
+  "name": "P57",
+  "title": "Azure MT3620",
+  "description": "Azure Sphere MT3620 : Cortex-A7 + 2 X Cortex-M4F",
+  "homepage": "https://www.mediatek.com/products/AIoT/mt3620",
+  "license": "Apache-2.0",
+  "engines": {
+    "platformio": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wiz-IO/platform-azure.git"
+  },
+  "version": "2.0.4",
+  "frameworks": {
+      "arduino": {
+        "package": "framework-azure",
+        "script": "builder/frameworks/arduino.py"
+      },
+      "linux": {
+        "package": "framework-azure",
+        "script": "builder/frameworks/linux.py"
+      },
+      "baremetal": {
+        "package": "framework-azure",
+        "script": "builder/frameworks/baremetal.py"
+      },
+      "mediatek": {
+        "package": "framework-azure",
+        "script": "builder/frameworks/mediatek.py"
+      },
+      "wiring": {
+        "package": "framework-azure",
+        "script": "builder/frameworks/wiring.py"
+      }
+  },
+  "packages": {
+    "framework-azure": {
+        "type": "framework",
+        "version": "https://github.com/Wiz-IO/framework-azure.git"
+    },
+    "toolchain-arm-poky-linux-musleabi-hf": {
+      "type": "toolchain",
+      "version": "http://wizio.eu/azure/toolchain-arm-poky-linux-musleabi-hf-1.0.0.zip"
+    },
+    "toolchain-gccarmnoneeabi": {
+      "type": "toolchain",
+      "version": "=1.70201.0"
+    },
+    "tool-azure": {
+      "type": "uploader",
+      "version": "https://github.com/Wiz-IO/tool-azure.git"
+    }
+  }
+}
