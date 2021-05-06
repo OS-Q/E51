@@ -1,12 +1,3 @@
-/*  
-    Azure Sphere 2019 Georgi Angelov
-        https://github.com/Wiz-IO/platform-azure
-        http://www.wizio.eu/
-
-    OPEN: 'platformio.ini' and edit your settings
-    OPEN: 'src/app_manifest.json' and enter your 'Capabilities'
- */
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
@@ -18,7 +9,7 @@
 
 void __attribute__((weak)) LogToUart(const char *format, ...);
 
-#define LED_GREEN 9  
+#define LED_GREEN 9
 
 const uint8_t uart_port_num = UART_ISU_0;
 
@@ -41,7 +32,7 @@ void vTaskPrint(void *pvParameters)
 }
 
 void vTaskBlink(void *pvParameters)
-{  
+{
     printf("TASK BLINK SETUP\n");
     static bool led = false;
     mtk_os_hal_gpio_request(LED_GREEN);
